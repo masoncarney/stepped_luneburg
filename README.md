@@ -1,5 +1,5 @@
-# stepped_luneburg - Python 2.7.X module
-Modeling of a stepped Luneburg lens for all-sky surveys
+# stepped_luneburg
+Python 2.7.X module for modeling of a stepped Luneburg lens for all-sky surveys
 
 ## Code Citation
 
