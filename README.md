@@ -1,14 +1,14 @@
 # stepped_luneburg - Python 2.7.X module
----------------------------------------------------------------------
 Modeling of a stepped Luneburg lens for all-sky surveys
 
+## Code Citation
 
 Directory Structure
 ----------------------
 
 Contents:  
 
-    luneburg_lens
+    stepped_luneburg
     |
     |-- model
     |   |-- luneburg_lens.py        : Contains stepped_luneburg() function for running Luneburg lens model
@@ -55,10 +55,10 @@ Known Issues
 ----------------------
 
 - Setting stepped_luneburg() parameter 'center' to anything but default ([0,0,0]) causes plotting error
----> to do: debug 'center' parameter
+    - to do: debug 'center' parameter
 
 - The plot=True option in stepped_luneburg() becomes a memory hog if the number of rays approaches 1000 or greater because all ray trajectories and ray-interface intesections are stored for plotting
----> set plot = False for large nrays
+    - set plot = False for large nrays
 
 
 
