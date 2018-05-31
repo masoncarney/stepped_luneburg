@@ -1,9 +1,6 @@
-# stepped_luneburg
-Modeling of a stepped Luneburg lens for all-sky surveys
-
-# ---------------------------------------------------------------------
-stepped_luneburg() - Python 2.7.X module for modeling a Luneburg lens
+# stepped_luneburg - Python 2.7.X module
 ---------------------------------------------------------------------
+Modeling of a stepped Luneburg lens for all-sky surveys
 
 
 Directory Structure
@@ -46,10 +43,10 @@ Contents:
 Define the Module Path
 ----------------------
 
-Option 1: Manually include the path in a personal script
+- Option 1: Manually include the path in a personal script
 ---> with other module imports at the top of your Python script, also import sys and afterward add the line sys.path.append("/my/path/to/luneburg_lens/model")
 
-Option 2: Globally include the path by adding it to the system variable $PYTHONPATH
+- Option 2: Globally include the path by adding it to the system variable $PYTHONPATH
 ---> bash - add the following line to the .bashrc file: export PYTHONPATH="/my/path/to/luneburg_lens/model:$PYTHONPATH"
 ---> c-shell - add the following line to the .cshrc file: setenv PYTHONPATH ${PYTHONPATH}:/my/path/to/luneburg_lens/model
 
@@ -64,9 +61,12 @@ Known Issues
 ---> set plot = False for large nrays
 
 
-=============================================
-    luneburg_lens.py | stepped_luneburg()
-=============================================
+
+
+# Description of Code Modules
+
+luneburg_lens.py | stepped_luneburg()
+-----------------------
 
 Create a stepped Luneburg lens model: a spherical lens of varying index of refraction
 
@@ -154,9 +154,8 @@ Create a stepped Luneburg lens model: a spherical lens of varying index of refra
     ==========    
     
 
-=============================================
-    enclosed_intensity.py | enc_int()
-=============================================
+enclosed_intensity.py | enc_int()
+-----------------------
 
 Calculate the cumulative enclosed intensity as a function of angle away from the Luneburg lens focal point. 
 
@@ -209,9 +208,8 @@ Calculate the cumulative enclosed intensity as a function of angle away from the
     ==========    
 
     
-=============================================
-    intensity_map.py | int_map()
-=============================================
+intensity_map.py | int_map()
+-----------------------
 
 Create a 2D bullseye-style intensity map of haloes produced by the Luneburg lens.
 
