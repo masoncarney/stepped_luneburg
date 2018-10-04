@@ -2,26 +2,34 @@
 Python 2.7.X module for modeling of a stepped Luneburg lens for all-sky surveys
 
 ## Code Citation
-    
+
+The code is registered at the [ASCL](http://ascl.net "ASCL") with the identifier [ascl:1809.014](http://ascl.net/1809.014) and should be cited in papers as:
+
+    Carney, M.T., Kenworthy, M.A., 2018, Astrophysics Source Code Library, record ascl:1809.014
+
 Define the Module Path
 ----------------------
 
 - Option 1: Manually include the path in a personal script
-    - when importing modules at the top of your Python script, also import sys and afterward add the line sys.path.append("/my/path/to/luneburg_lens/model")
+    - when importing modules at the top of your Python script, add the lines: </br> 
+    `import sys` </br>
+    `sys.path.append("/my/path/to/luneburg_lens/model")`
 
 - Option 2: Globally include the path by adding it to the system variable $PYTHONPATH
-    - bash - add the following line to the .bashrc file: export PYTHONPATH="/my/path/to/stepped_luneburg/model:$PYTHONPATH"
-    - c-shell - add the following line to the .cshrc file: setenv PYTHONPATH ${PYTHONPATH}:/my/path/to/stepped_luneburg/model
+    - bash - add the following line to the .bashrc file: </br>
+    `export PYTHONPATH="/my/path/to/stepped_luneburg/model:$PYTHONPATH"`
+    - c-shell - add the following line to the .cshrc file: </br>
+    `setenv PYTHONPATH ${PYTHONPATH}:/my/path/to/stepped_luneburg/model`
 
 
 Known Issues
 ----------------------
 
 - Setting stepped_luneburg() parameter 'center' to anything but default ([0,0,0]) causes plotting error
-    - to do: debug 'center' parameter
+    - **To do**: debug 'center' parameter
 
-- The plot=True option in stepped_luneburg() becomes a memory hog if the number of rays approaches 1000 or greater because all ray trajectories and ray-interface intesections are stored for plotting
-    - set plot = False for large nrays
+- The plot = True option in stepped_luneburg() becomes a memory hog if the number of rays approaches 1000 or greater because all ray trajectories and ray-interface intesections are stored for plotting
+    - **Solution:** set plot = False for large nrays
 
 
 Directory Structure
